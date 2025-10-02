@@ -76,13 +76,87 @@ using namespace std;
 // }
 //Problem 6
 // long long Factorial(int n=1) {
-//     if (n<0) {
+//    if (n<0) {
 //         return 0;
 //     }
 //     long long result = 1;
 //     for (int i = 1; i <= n; ++i) {
-//         result *= i;
+//          result *= i;
 //     }
 //     return result;
 // }
-//problem 7
+// int main() {
+//     cout << "Factorial of 5:"<<Factorial(5)<<endl;
+//     cout<<"factorial pf 0:"<<Factorial(0)<<endl;
+//     cout<<"Factorial with no parameter (defaults to 1):"<<Factorial()<<endl;
+// }
+//Problem 7
+// int gcd(int num1,int num2) {
+//     while (num2 !=0) {
+//         int temp = num2;
+//         num2 = num1 % num2;
+//         num1 = temp;
+//     }
+//     return num1;
+//     int main () {
+//         cout<<"GCD of 48 and 18:"<<gcd(48,18)<<endl;
+//         cout<<"GCD of 101 and 103:"<<gcd(101,103)<<endl;
+//     }
+// }
+//Problem 8
+// int maximum(int a, int b, int c) {
+//     int max = a;
+//     if (b > max) max = b;
+//     if (c > max) max = c;
+//     return max;
+// }
+//
+// int minimum(int a, int b, int c) {
+//     int min = a;
+//     if (b < min) min = b;
+//     if (c < min) min = c;
+//     return min;
+// }
+//
+// int main() {
+//     int x, y, z;
+//     cout << "Enter three numbers: ";
+//     cin >> x >> y >> z;
+//
+//     cout << "Maximum: " << maximum(x, y, z) << endl;
+//     cout << "Minimum: " << minimum(x, y, z) << endl;
+// }
+//Problem 9
+// double sum(double a, double b) {
+//     return a+b;
+//     double subtract = a-b;
+//     return a-b;
+//     double product = a*b;
+//     return a*b;
+//     double quotient = a/b;
+//     if (b == 0) {
+//         cout << "Error: Division by zero!" << endl;
+//         return 0;
+//     }
+//     return a/b;
+//     int main () {
+//         double a, b;
+//         cout<<"Enter 2 numbers: ";
+//         cin>>a>>b;
+//         cout<<"Sum:"<<sum(a,b)<<endl;
+//         cout<<"Subtract:"<<subtract(a,b)<<endl;
+//         cout<<"Product:"<<product<<endl;
+//         cout<<"Quotient:"<<quotient<<endl;
+//     return 0;
+// }
+//problem 10
+// int getTriangularNumber(int n) {
+//     return n * (n + 1) / 2;
+// }
+// int main() {
+//     for (int i = 1; i <= 75; i++) {
+//         cout << getTriangularNumber(i) << "\t";
+//         if (i % 5 == 0) cout << endl;
+//     }
+//     return 0;
+// }
