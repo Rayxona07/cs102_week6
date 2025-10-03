@@ -160,3 +160,167 @@ using namespace std;
 //     }
 //     return 0;
 // }
+//Problem 10
+// int getTriangularNumber(int n) {
+// return n+(n+1)/2;
+// }
+// int main () {
+//     cout<<"First 75 triangular numbers:"<<endl;
+//     for (int i=1; i<=75; i++) {
+//         cout<<getTriangularNumber(i)<<endl;
+//         if (i % 5 ==0)cout <<endl;
+//     }
+//
+// }
+//Problem 11
+// void displayEven(int number) {
+//     cout <<"Even digits;";
+//     while (number >0) {
+//         int digit = number % 10;
+//         if (digit % 2 == 0) {
+//             cout << digit;
+//
+//         }
+//         number = number / 10;
+//     }
+//     cout << endl;
+// }
+// int main() {
+//     int number;
+//     cout<<"Enter an integer: ";
+//     cin>>number;
+//     displayEven(number);
+//     return 0;
+// }
+//Problem 12
+// int cubeOfDigits(int number) {
+//     int sum = 0, digit;
+//     while (number > 0) {
+//         digit = number % 10;
+//         sum += digit * digit * digit;
+//         number /= 10;
+//     }
+//     return sum;
+// }
+
+// void isArmstrong(int sum, int number) {
+//     if (sum == number)
+//         cout << number << " is an Armstrong number." << endl;
+//     else
+//         cout << number << " is NOT an Armstrong number." << endl;
+// }
+//
+// int main() {
+//     int num;
+//     cout << "Enter an integer: ";
+//     cin >> num;
+//     int sum = cubeOfDigits(num);
+//     isArmstrong(sum, num);
+//     return 0;
+// }
+//Problem 13
+// int numberOfDaysInFebruary(int year) {
+//     //Leap year condition;
+//     //divisible by 4 AND (not divisible by 100 OR divisible by 400)
+//     if ((year % 4 == 0) && (year % 100 != 0)) {
+//         return 29;
+//     } else {
+//             return 28;
+
+
+//         }
+//     }
+//
+// int main() {
+//     cout<< "Year\tDays in February"<<endl;
+//     for (int year= 1985;year<=1993;year++) {
+//         cout<<year<<"\t"<<numberOfDaysInFebruary(year)<<endl;
+//     }
+// }
+//Problem 14
+// double futureInvestmentValue(double investmentAmount, double monthlyInterestRate, int years) {
+//     return investmentAmount * pow(1 + monthlyInterestRate, years * 12);
+// }
+//
+// int main() {
+//     double investmentAmount, annualInterestRate;
+//     int years;
+//
+//     cout << "Enter investment amount: ";
+//     cin >> investmentAmount;
+//     cout << "Enter annual interest rate (e.g., 3.25 for 3.25%): ";
+//     cin >> annualInterestRate;
+//     cout << "Enter number of years: ";
+//     cin >> years;
+//
+//     double monthlyInterestRate = annualInterestRate / 1200.0; // convert % to monthly rate
+//     double futureValue = futureInvestmentValue(investmentAmount, monthlyInterestRate, years);
+//
+//     cout << "Future investment value is: " << futureValue << endl;
+//
+//     return 0;
+// }
+//Problem 15
+// void printASCII(char ch1,char ch2, int int numPerLine) {
+//     int count = 0;
+//     for (char ch = ch1; ch <= ch2; ch++) {
+//         cout<<ch<<"="<<(int)ch<<"\";"
+//                                 "count++;"
+//                                 "if(count==numPerLine==0) {
+//         cout<<endl;
+//     }
+// }
+// cout <<endl;
+// }
+// int main() {
+//     cout <<"ASCII values from 'a' to 'm':"<<endl;
+//     printASCII('a','m',6);
+//     return 0;
+//
+// }
+//Problem 16
+// void printMatrix(int n) {
+//     for (int i=0; 1<n;i++) {
+//         for (int j=0; j<n; j++) {
+//             cout<<rand() % 1001 <<"\t";
+//         }
+//     cout<<endl;
+//     }
+//
+// }
+// int main () {
+//     int n;
+//     cout<<"Enter n for n*n matrix:";
+//     cin>>n;
+//     cout<<"Matrix of size"<<n<<"x"<<n<<":\n";
+//     printMatrix(n);
+//     return 0;
+// }
+//Problem 17
+// bool isPalindrome(int num) {
+//     int original = num, reversed = 0, digit;
+//     while (num > 0) {
+//         digit = num % 10;
+//         reversed = reversed * 10 + digit;
+//         num /= 10;
+//     }
+//     return original == reversed;
+// }
+//
+// int main() {
+//     int count = 0, num = 2; // start from 2
+//     cout << "First 50 even palindrome numbers:\n";
+//
+//     while (count < 50) {
+//         if (num % 2 == 0 && isPalindrome(num)) {
+//             cout << num << "\t";
+//             count++;
+//             if (count % 5 == 0) cout << endl; // 5 numbers per line
+//         }
+//         num++;
+//     }
+//
+//     return 0;
+// }
+//Problem 18
+
