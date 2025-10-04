@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <random>
 using namespace std;
 //
 // float product(float x,float y) {
@@ -352,4 +353,64 @@ using namespace std;
 //     long totalMinutes = totalSeconds /60;
 //     long minutes = totalMinutes % 60;              //remaining minutes
 //     long hours = totalMinutes / 60;                //remaining hours
+// }
+//Problem 21
+// int main() {
+//     time_t timer;
+//     time(&timer);
+//     tm* timeInfo;
+//     timeInfo = localtime(&timer);
+//
+//     cout << "Current date and time is " << asctime(timeInfo);
+//
+//     return 0;
+// }
+//Problem 22
+// double area(int n,double side) {
+//     return(n * pow(side, 2))/(4 *tan(M_PI/n));
+
+// }
+// int main() {
+//     int numSides;
+//     double sideLength;
+//     cout<<"Enter the number of sides: ";
+//     cin>>numSides;
+//     cout<<"Enter the side: ";
+//     cin>>sideLength;
+//     double polygonArea = area(numSides,sideLength);
+//     cout<<"Area of the polygon is: "<<polygonArea<<endl;
+// }
+//problem 25
+// bool isPrime(int n) {
+//     if (n <= 1) return false;
+//     if (n % 2 == 0) return false;
+//     for (int i = 3; i <= sqrt(n); i += 2) {
+//         if (n % i == 0) return false;
+//     }
+//         return true;
+// }
+// int sumOfDigits(int n) {
+//     int sum = 0;
+//     while (n > 0) {
+//         sum += n % 10;
+//         n /= 10;
+//     }
+//     return sum;
+// }
+// bool isAdditivePrime(int n) {
+//     if (!isPrime(n)) return false;
+//     int digitsSum = sumOfDigits(n);
+//     return isPrime(digitsSum);
+// }
+// void dindAndDisplayAdditivePrimes(int count) {
+//     int number = 2;
+//     int found = 0;
+//     while (found < count) {
+//         if (isAdditivePrime(number)) {
+//             cout << number << endl;
+//             found++;
+//         }
+//         number++;
+//     }
+// cout<<endl;
 // }
