@@ -322,5 +322,34 @@ using namespace std;
 //
 //     return 0;
 // }
-//Problem 18
-
+//Problem 19
+// void sorted (double a, double b,double c) {
+//     double arr[]={a,b,c};
+//
+//     for (int i=0; i<3-1;i++) {
+//         for (int j=0; j<3-i-1; j++) {
+//             if (arr[j]>arr[j+1]) {
+//                 //swap
+//                 int temp = arr[j];
+//                 arr[j] = arr[j+1];
+//                 arr[j+1] = temp;
+//             }
+//         }
+//     }
+//     for (int i=0; i<3;i++) cout<<arr[i]<<" ";
+// }
+// int main () {
+//     double a,b,c;
+//     cout<<"input 3 numb";
+//     cin>>a>>b>>c;
+//     sorted(a,b,c);
+//     return 0;
+// }
+//problem 20
+// string convertMillis(long millis) {
+//     long totalSeconds = millis / 1000;             //convert to seconds
+//     long seconds =totalSeconds % 60;               //remaining seconds
+//     long totalMinutes = totalSeconds /60;
+//     long minutes = totalMinutes % 60;              //remaining minutes
+//     long hours = totalMinutes / 60;                //remaining hours
+// }
